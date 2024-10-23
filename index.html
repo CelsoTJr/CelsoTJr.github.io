@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,12 +15,38 @@
 </head>
 <body>
     <header class="header">
+        <nav class="header_nav">
+            <ul class="menu menu-principal">
+                <li class="menu_item ">
+                    <a class="menu_link" href="#home">
+                        <span class="menu_text">Home</span>
+                    </a>
+                </li>
+                <li class="menu_item">
+                    <a class="menu_link" href="#projetos">
+                        <span class="menu_text">Projetos</span>
+                    </a>
+                </li>
+                <li class="menu_item">
+                    <a class="menu_link" href="#sobre">
+                        <span class="menu_text">Sobre</span>
+                    </a>
+                </li>
+                <li class="menu_item">
+                    <a class="menu_link" href="#contato">
+                        <span class="menu_text">Contato</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
         <div class="header_brand">
-            <img class="brand_logo" src="./assets/images/cabeçalho.png.png" alt="Logo tela">        
+            <i id="brand_logo" class="bi bi-rocket-takeoff"></i>    
         </div>
-        <i id="toggleTheme" class="bi bi-sun"></i>
+        <div class="header_toggle">
+            <i id="toggleTheme" class="bi bi-moon"></i>
+        </div>
     </header>
-    <nav>
+    <nav class="nav-mobile">
         <ul class="menu menu-mobile">
             <li class="menu_item ">
                 <a class="menu_link active" href="#home">
@@ -48,6 +74,307 @@
             </li>
         </ul>
     </nav>
-    <h1>Celso o DEV</h1>
+    <main>
+        <div class="main_content1">
+            <h1><b>Soluções Criativas &</b> Desenvolvimento</h1>
+            <p>Celso Taddeo Junior, Santos-SP, cursando linguagens de programação.</p>
+            <ul class="menu menu-social">
+                <li>
+                    <a class="menu_link" href="">
+                        <i class="menu_icon bi bi-github"></i>
+                    </a>
+                    <a class="menu_link" href="">
+                        <i class="menu_icon bi bi-linkedin"></i>
+                    </a>
+                    <a class="menu_link" href="">
+                        <i class="menu_icon bi bi-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+            <a href="#projetos">
+                <button class="btn btn-primary">
+                    <span>Ver Projetos</span>
+                    <i class="bi bi-arrow-down-right"></i>
+                </button>
+            </a>
+        </div>
+        <div class="main_content2">
+            <iframe src="https://www.youtube.com/embed/S9uPNppGsGo?si=5ie4lbiQTqkMetkJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </main>
+    <section class="skills">
+        <h2>Em busca de conhecimento das principais techs do mercado.</h2>
+        <ul class="skills_list">
+            <li class="skills_item">
+                <img class="skills_logo" src="./assets/images/techs/Angular.svg" alt="Angular">
+            </li>
+            <li class="skills_item">
+                <img class="skills_logo" src="./assets/images/techs/Bootstrap.svg" alt="Bootstrap">
+            </li>
+            <li class="skills_item">
+                <img class="skills_logo" src="./assets/images/techs/SASS.svg" alt="SAAS">
+            </li>
+            <li class="skills_item">
+                <img class="skills_logo" src="./assets/images/techs/TypeScript.svg" alt="TypeScript">
+            </li>
+        </ul>
+    </section>
+    <section id="projetos" class="projects">
+        <h2>Projetos</h2>
+        <div class="projects_container">
+            <div class="projects_card">
+                <img class="card_cover" src="./assets/images/projects/josisbox.jpg" alt="Tela Josi">
+                <div class="card_body">
+                    <h3 class="card_title">Comércio Caixa da Josi</h3>
+                    <p class="card_description">E-commerce de Livros</p>
+                    <ul class="card_list">
+                        <li>Lista de Favoritos;</li>
+                        <li>Carrinho;</li>
+                        <li>Filtro por preço e categoria.</li>
+                    </ul>
+                    <ul class="skills_list">
+                        <li class="skills_item">
+                            <img class="skills_logo" src="./assets/images/techs/Angular.svg" alt="Angular">
+                        </li>
+                        <li class="skills_item">
+                            <img class="skills_logo" src="./assets/images/techs/Bootstrap.svg" alt="Bootstrap">
+                        </li>
+                        <li class="skills_item">
+                            <img class="skills_logo" src="./assets/images/techs/SASS.svg" alt="SAAS">
+                        </li>
+                        <li class="skills_item">
+                            <img class="skills_logo" src="./assets/images/techs/TypeScript.svg" alt="TypeScript">
+                        </li>
+                    </ul>
+                    <div class="card_button">
+                        <button class="btn btn-primary">
+                            <span>Prévia</span>
+                            <i class="bi bi-arrow-up-right"></i>
+                        </button>
+                        <button class="btn">
+                            <span>Repositório</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="projects_card card-reverse">
+                <img class="card_cover" src="./assets/images/projects/archstil.jpg" alt="Tela Archi">
+                <div class="card_body">
+                    <h3 class="card_title">Blog do Archie</h3>
+                    <p class="card_description">A história pro trás dos Estilos Arquitetônicos</p>
+                    <ul class="card_list">
+                        <li>Postagens relacionadas e em destaque;</li>
+                        <li>Filtragem por tags e categorias;</li>
+                        <li>Biografia do autor.</li>
+                    </ul>
+                    <ul class="skills_list">
+                        <li class="skills_item">
+                            <img class="skills_logo" src="./assets/images/techs/Angular.svg" alt="Angular">
+                        </li>
+                        <li class="skills_item">
+                            <img class="skills_logo" src="./assets/images/techs/Bootstrap.svg" alt="Bootstrap">
+                        </li>
+                        <li class="skills_item">
+                            <img class="skills_logo" src="./assets/images/techs/SASS.svg" alt="SAAS">
+                        </li>
+                        <li class="skills_item">
+                            <img class="skills_logo" src="./assets/images/techs/TypeScript.svg" alt="TypeScript">
+                        </li>
+                    </ul>
+                    <div class="card_button">
+                        <button class="btn btn-primary">
+                            <span>Prévia</span>
+                            <i class="bi bi-arrow-up-right"></i>
+                        </button>
+                        <button class="btn">
+                            <span>Repositório</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="projects_card">
+                <img class="card_cover" src="./assets/images/projects/games-store.jpg" alt="Tela Games">
+                <div class="card_body">
+                    <h3 class="card_title">Loja de Games</h3>
+                    <p class="card_description">jogs</p>
+                    <ul class="card_list">
+                        <li>Favoritos;</li>
+                        <li>Carrinho;</li>
+                        <li>Filtro por preço e categoria.</li>
+                    </ul>
+                    <ul class="skills_list">
+                        <li class="skills_item">
+                            <img class="skills_logo" src="./assets/images/techs/Angular.svg" alt="Angular">
+                        </li>
+                        <li class="skills_item">
+                            <img class="skills_logo" src="./assets/images/techs/Bootstrap.svg" alt="Bootstrap">
+                        </li>
+                        <li class="skills_item">
+                            <img class="skills_logo" src="./assets/images/techs/SASS.svg" alt="SAAS">
+                        </li>
+                        <li class="skills_item">
+                            <img class="skills_logo" src="./assets/images/techs/TypeScript.svg" alt="TypeScript">
+                        </li>
+                    </ul>
+                    <div class="card_button">
+                        <button class="btn btn-primary">
+                            <span>Prévia</span>
+                            <i class="bi bi-arrow-up-right"></i>
+                        </button>
+                        <button class="btn">
+                            <span>Repositório</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/CelsoTJr" target="_blank">
+                <button class="btn btn-primary">
+                    <span>Ver todos os projetos</span>
+                    <i class="bi bi-arrow-up-right"></i>
+                </button>
+            </a>
+        </div>
+    </section>
+    <section id="sobre" class="about">
+        <div class="about__content1">
+            <img class="about__photo" src="assets/images/perfil.jpg" alt="">
+            <div class="about__description">
+              <h2>Sobre mim</h2>
+              <p>Celso Taddeo Junior. Apaixonada por games e tecnologia, meu primeiro "Hello World" foi a 2 meses quando tive contato com Python. Atualmente curso varios cursos grátis, focado em Desenvolvimento de Software.
+              </p>  
+              <div class="about__icons">
+                <i class="bi bi-translate"></i>
+                <span>Inglês: Fluennte | Espanhol: Básico</span>
+              </div>
+              <div class="description__buttons">
+                <a href="https://www.linkedin.com/in/celsotjr/" target="_blank">
+                  <button class="btn btn--primary">
+                    <span>Conecte-se Comigo</span>
+                    <i class="bi bi-arrow-up-right"></i>
+                  </button> 
+                </a>
+                <a href="">
+                  <button class="btn">
+                    <span>Currículo</span>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="about__content2">
+            <div class="col1">
+              <div class="row1">
+                <h3>Formação</h3>
+                <h4>Desenvolvimento de Software com Metodologia Ágil</h4>
+                <span>Out 2024 - Atualmente</span>
+                <div class="about__icons">
+                  <i class="bi bi-bank"></i>
+                  <span>Universidade Paulista</span>
+                </div>
+                <div class="about__icons">
+                  <i class="bi bi-mortarboard"></i>
+                  <span>Superior Completo</span>
+                </div>
+              </div>
+              <div class="row2">
+                <h3>Experiências</h3>
+                <h4>Estudante</h4>
+                <span>Digital Innovation One. Out 2024 - Atualmente</span>
+                <span>Foco em Estudos Fulllstack.</span>
+                <ul class="about__list">
+                  <li class="about__item">Elaboração de ementas;</li>
+                  <li class="about__item">Ministração de aulas assíncronas;</li>
+                  <li class="about__item">Produção de materiais complementares.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col2">
+                <h3>Cursos</h3>
+                <div id="accordion">
+                    <div class="accordion__item">
+                        <button class="accordion__header start">
+                            <span>Versionamento de Código com Git e GitHub</span>
+                            <i class="bi bi-caret-down-fill"></i>
+                        </button>
+                        <div class="accordion__body">
+                            <p>
+                                DIO. Out 2024. 2 horas.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <button class="accordion__header">
+                            <span>Jogo Detona Ralph</span>
+                            <i class="bi bi-caret-down-fill"></i>
+                        </button>
+                        <div class="accordion__body">
+                            <p>
+                                DIO. Out 2024. 3 horas.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <button class="accordion__header">
+                            <span>JokenPO Yu-Gi-Oh</span>
+                            <i class="bi bi-caret-down-fill"></i>
+                        </button>
+                        <div class="accordion__body">
+                            <p>
+                                DIO. Out 2024. 3 horas.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion__item end">
+                        <button class="accordion__header">
+                            <span>Multiverso Spider Man HTML</span>
+                            <i class="bi bi-caret-down-fill"></i>
+                        </button>
+                        <div class="accordion__body end">
+                            <p>
+                                DIO. Out 2024. 5 horas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section id="contato" class="contact">
+        <h2>Contate-me</h2>
+        <p>Estou disponível para serviços e novas conexões. Contate-me via 
+          e-mail e conecte-se comigo através das minhas redes sociais.
+        </p>
+        <ul class="menu menu--social">
+          <li>
+            <a class="menu__link" href="https://github.com/CelsoTJr" target="_blank">
+              <i class="menu__icon bi bi-github"></i>
+              <span>GitHub</span>
+            </a>
+          </li>
+          <li>
+            <a class="menu__link" href="https://www.linkedin.com/in/celsotjr/" target="_blank">
+              <i class="menu__icon bi bi-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+          </li>
+          <li>
+            <a class="menu__link" href="https://www.instagram.com/tjrcelso" target="_blank">
+              <i class="menu__icon bi bi-instagram"></i>
+              <span>Instagram</span>
+            </a>
+          </li>
+        </ul>
+        <a href="mailto:ctaddeojunior@yahoo.com.br">
+          <button class="btn btn--primary">
+            <span class="email">ctaddeojunior@yahoo.com.br</span>
+          </button>  
+        </a>
+      </section>
+    <footer>
+        <p>
+            © 2024. Todos os Direitos Reservados. Celso Taddeo Junior. Desenvolvido por <a href="https://github.com/CelsoTJr">CelsoTJr</a>.
+        </p>
+    </footer>
+    <!-- Script JS -->
+    <script src="./script.js"></script>
 </body>
 </html>
